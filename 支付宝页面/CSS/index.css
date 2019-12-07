@@ -1,0 +1,137 @@
+@charset "utf-8";
+html,body,ul,li,p{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+    font-size: 100px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+li{
+    list-style-type: none;
+}
+header,nav,section,footer{
+    display: block;
+}
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+header{
+    display: flex;
+    height: 0.75rem;
+    background-color: gainsboro;
+    color: white;
+    justify-content: space-between;
+    padding: 0 0.16rem;
+    align-items: center;
+    box-sizing: border-box;
+}
+header i{
+    font-size: 25px!important;
+    vertical-align: middle;
+}
+header a{
+    color: white;
+    font-size: 14px;
+    vertical-align: middle;
+}
+nav{
+    height: 1.04rem;
+    background-color: gainsboro;
+    color: white;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+nav ul li{
+    position: relative;
+}
+nav ul li i{
+    display: block;
+    font-size: 36px!important;
+    margin-bottom: 0.13rem;
+}
+nav ul li:last-child i{
+    background: url("../images/banner.jpg")no-repeat;
+    background-size: 100% 100%;
+    height: 0.4rem;
+    width: 0.4rem;
+}
+nav ul li:nth-child(3):before{
+    content: "新";
+    display: block;
+    width: 0.14rem;
+    height: 0.14rem;
+    position: absolute;
+    top: -0.05rem;
+    right: -0.05rem;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+}
+nav a{
+    color: white;
+}
+section{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-size: 12px;
+    overflow: auto;
+}
+section ul{
+    display: flex;
+    text-align: center;
+    height: 0.9rem;
+}
+section ul li{
+    width: 25%;
+    display: flex;
+    box-sizing: border-box;
+    height: 0.9rem;
+    padding: 0.22rem 0;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    justify-content: center;
+}
+section ul li i{
+    display: block;
+    font-size: 16px!important;
+}
+section ul li a{
+    display: block;
+    line-height: 0.42rem;
+}
+section ul:first-child li:first-child i{
+    color: green;
+}
+footer{
+    height: 0.5rem;
+}
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+footer ul li i{
+    display: block;
+    font-size: 22px!important;
+}
+footer ul li a{
+    color: gainsboro;
+    font-size: 12px;
+}
+
+
+
+
