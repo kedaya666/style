@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#selectAll").click(function(){
+                $("#list :checkbox").attr("checked",true);
+            })
+            $("#notselect").click(function(){
+                $("#list :checkbox").attr("checked",false);
+            })
+        })
+    </script>
+</head>
+<body>
+<ul id="list">
+    <li><input type="checkbox" value="1"/>旺仔牛奶</li>
+    <li><input type="checkbox" value="2"/>旺仔牛奶1</li>
+    <li><input type="checkbox" value="3"/>旺仔牛奶2</li>
+    <li><input type="checkbox" value="4"/>旺仔牛奶3</li>
+    <li><input type="checkbox" value="5"/>旺仔牛奶4</li>
+    <li><input type="checkbox" value="6"/>旺仔牛奶5</li>
+</ul>
+<input type="button" value="全选" id="selectAll"/>
+<input type="button" value="取消全选" id="notselect"/>
+
+</body>
+</html>

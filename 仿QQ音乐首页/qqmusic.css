@@ -1,0 +1,468 @@
+*{margin: 0;padding: 0}
+/*--------------------页面头部----------------------*/
+.head{
+    height: 142px;
+    width: 100%;
+    background-color: white;
+    font-size: 20px;
+}
+.head-box{
+    width: 1200px;
+    margin: 0 auto;
+    height: 142px;
+}
+.head-top{
+    height: 89px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.head-top img{
+    float: left;
+    padding-top: 20px;
+    padding-right: 25px;
+}
+.top-list{
+    width: 433px;
+    height: 89px;
+    float: left;
+    list-style: none;
+}
+.top-list li{
+    padding: 0 18px;
+    line-height: 90px;
+    float: left;
+}
+.list-li{
+    background-color: #31c27c;
+    height: 89px;
+}
+.top-list li a{
+    text-decoration: none;
+    color: black;
+}
+.top-list li a:hover{
+    color: #31c27c;
+}
+.search{
+    width: 240px;
+    height: 28px;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    padding: 5px;
+    color: #c9c9c9;
+    margin: 25px 10px 0 20px;
+}
+.green{
+    width: 115px;
+    height: 42px;
+    float: left;
+    background-color: #31c27c;
+    color: white;
+    margin: 20px 10px 0 15px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.free{
+    width: 70px;
+    height: 40px;
+    border: 1px solid#c9c9c9;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    color: black;
+    float: left;
+    margin-top: 20px;
+
+}
+.hea-down{
+    height: 52px;
+}
+.down-list{
+    height: 52px;
+    width: 900px;
+    padding-left: 225px;
+    list-style: none;
+}
+.down-list li{
+    float: left;
+    padding: 0 30px;
+    line-height: 52px;
+    font-size: 15px;
+}
+.down-list li:hover{
+    color: #31c27c;
+}
+/*-------------------新歌首发-------------------------*/
+.new{
+    width: 100%;
+    height: 735px;
+    background: url("images/bg_index_new.jpg") no-repeat;
+    position: relative;
+}
+.new-box{
+    width: 1200px;
+    height: 735px;
+    margin: 0 auto;
+}
+.p-title{
+    width: 1200px;
+    text-align: center;
+    height: 48px;
+    padding: 80px 0 47px;
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+}
+.new-list{
+    width: 600px;
+    height: 50px;
+    list-style: none;
+    font-size: 16px;
+    float: left;
+    margin-left: 356px;
+}
+.new-list li{
+    width: 103px;
+    text-align: center;
+    float: left;
+    color: #888888;
+    font-weight: bold;
+}
+.new-list li:hover{
+    color: white;
+}
+#content{
+    width: 1200px;
+    height: 418px;
+    position: relative;
+    overflow: hidden;
+}
+.img-list{
+    height: 418px;
+    width: 3600px;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.img-list li{
+    float: left;
+    width: 300px;
+    height: 418px;
+}
+.img-list li img{
+    display: block;
+}
+.img-list li p{
+    height: 83px;
+    padding-top: 35px;
+    text-align: center;
+    background: black;
+}
+.span1{
+    color: white;
+}
+.span2{
+    color: #999999;
+}
+.img-list li p:hover{
+    background-color: #31c27c;
+}
+.strip{
+    height: 2px;
+    text-align: center;
+    margin-top: 35px;
+}
+.strip-span{
+    width: 30px;
+    background-color:#6d6d6d;
+    margin-right: 10px;
+    height: 2px;
+    display: inline-block;
+}
+
+/*--------------------热门歌单-------------------------*/
+.hot{
+    height: 758px;
+    width: 100%;
+    position: relative;
+}
+.hot-main{
+    width: 1200px;
+    margin: 0 auto;
+    height: 758px;
+}
+.main-title{
+    height: 102px;
+    padding-top: 76px;
+    font-size: 48px;
+    text-align: center;
+}
+#current{
+    width: 1200px;
+    height: 466px;
+    position: relative;
+    overflow: hidden;
+}
+.hot-list{
+    width: 3600px;
+    height: 466px;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hot-list li{
+    float: left;
+    width: 300px;
+    height: 466px;
+}
+.hot-list li img{
+    display: block;
+}
+.hot-list-p1{
+    height: 110px;
+    background-color: #333333;
+    text-align: center;
+    padding-top: 56px;
+}
+.hot-list-p2{
+    height: 110px;
+    background-color: #414141;
+    text-align: center;
+    padding-top: 56px;
+}
+.hot-list li p:hover{
+    background-color:  #31c27c;
+}
+/*---------------MV首播-------------------------*/
+.mv{
+    width: 100%;
+    height: 862px;
+    background-color: #e6e6e6;
+}
+.mv-main{
+    width: 1200px;
+    margin: 0 auto;
+    height: 862px;
+    font-size: 14px;
+}
+.mv-title{
+    height: 96px;
+    font-size: 48px;
+    padding-top: 85px;
+    text-align: center;
+}
+.mv-list{
+    width: 633px;
+    height: 47px;
+    margin-left: 327px;
+    float: left;
+    list-style: none;
+}
+.mv-list li{
+    float: left;
+    padding-right: 72px;
+    color: #8d8d8d;
+}
+.mv-list li:hover{
+    color: #353535;
+}
+.mv-span{
+    float: right;
+    color: #353535
+}
+.list-img1{
+    height: 306px;
+    list-style: none;
+}
+.list-img1 li{
+    width: 300px;
+    height: 306px;
+    float: left;
+}
+.list-img1 li p{
+    height: 97px;
+    text-align: center;
+    padding-top: 35px;
+    line-height: 20px;
+}
+.list-img1 li img{
+    display: block;
+    width: 300px;
+}
+.list-img1-span1{
+    color: #9da2a5;
+}
+/*---------------------页面尾部----------------------*/
+.foot{
+    height: 471px;
+    width: 100%;
+    background-color: #333333;
+}
+.foot-main{
+    width: 1200px;
+    margin: 0 auto;
+    height: 391px;
+    padding-top: 80px;
+}
+.main-div1{
+    height: 146px;
+    width: 344px;
+    float: left;
+}
+.main-div1 p{
+    font-size: 14px;
+    color: #999999;
+    padding-bottom: 50px;
+}
+.div1-list{
+    width: 400px;
+    height: 79px;
+    list-style: none;
+}
+.div1-list li{
+    height: 79px;
+    width: 72px;
+    float: left;
+    color: #999999;
+    margin-right: 16px;
+}
+.div1-li1{
+    width: 72px;
+    height: 50px;
+    background: url("images/footer.png") no-repeat left 0 ;
+}
+.div1-li2{
+    width: 72px;
+    height: 50px;
+    background: url("images/footer.png") no-repeat left -93px top 0;
+}
+.div1-li3{
+    width: 72px;
+    height: 50px;
+    background: url("images/footer.png") no-repeat left -187px top 0;
+}
+.div1-li4{
+    width: 72px;
+    height: 50px;
+    background: url("images/footer.png") no-repeat left -275px top 0;
+}
+.div1-list li p{
+    height: 29px;
+    padding-left: 10px;
+    line-height: 29px;
+}
+.main-div2{
+    width: 311px;
+    height: 146px;
+    float: left;
+    list-style: none;
+    margin-left: 100px;
+}
+.main-div2 p{
+    font-size: 14px;
+    color: #999999;
+    padding-bottom: 50px;
+}
+.div2-list{
+    width: 311px;
+    height: 95px;
+    list-style: none;
+
+}
+.div2-list li{
+    float: left;
+    width: 90px;
+    height: 95px;
+}
+.div2-li1{
+    width: 90px;
+    height: 50px;
+    background: url("images/footer.png") no-repeat left -369px top 0;
+}
+.div2-li2{
+    width: 90px;
+    height: 50px;
+    background: url("images/footer.png") no-repeat left -463px top 0;
+}
+.div2-li3{
+    width: 90px;
+    height: 50px;
+    background: url("images/footer.png") no-repeat left -562px top 0;
+}
+.main-div3{
+    height: 186px;
+    width: 271px;
+    float: left;
+    margin-left: 80px;
+}
+.main-div3 p{
+    font-size: 14px;
+    color: #999999;
+    padding-bottom: 50px;
+}
+.div3-a{
+    height: 119px;
+    width: 90px;
+    float: left;
+    line-height: 20px;
+    color: #999999;
+    font-size: 14px;
+}
+.main-pp{
+    clear: both;
+    height: 134px;
+    text-align: center;
+    line-height: 30px;
+    color: #999999;
+    padding-top: 80px;
+}
+/*---------------JS部分-------------*/
+#left{
+    width: 74px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 350px;
+    display: none;
+    padding-top: 30px;
+}
+#right{
+    width: 74px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    top: 350px;
+    display: none;
+    padding-top: 30px;
+}
+.color{
+    background-color: #31c27c;
+}
+.one{
+    background-color: white;
+}
+#left2{
+    width: 74px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 350px;
+    display: none;
+    padding-top: 30px;
+}
+#right2{
+    width: 74px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    top: 350px;
+    display: none;
+    padding-top: 30px;
+}
+
+
+

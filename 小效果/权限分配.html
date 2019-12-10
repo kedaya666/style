@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#moveToright").click(function(){
+                $("#select1 option:selected").appendTo("#select2");
+            });
+            $("#moveToleft").click(function(){
+                $("#select2 option:selected").appendTo("#select1");
+            });
+        })
+
+    </script>
+</head>
+<body>
+<select id="select1" multiple="multiple">
+    <option value="">收作业</option>
+    <option value="">负责记录</option>
+    <option value="">负责卫生</option>
+    <option value="">负more。。。。</option>
+</select>
+<input type="button" id="moveToright" value=">"/>
+<input type="button" id="moveToleft" value="<"/>
+<select id="select2" multiple="multiple"></select>
+
+</body>
+</html>

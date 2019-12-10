@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>文字雨特效</title>
+
+	<!--外部文件-->
+	<script src="jquery-3.0.0.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="bootstrap.min.css"/>
+	<link rel="stylesheet" href="main.css"/>
+
+
+</head>
+<body>
+
+<!--canvas布局-->
+<canvas id="c"></canvas>
+
+<!--登录窗口 布局-->
+<div id="login">
+	<h1>Hi,Man</h1>
+	<input id="password" type="password" placeholder="I need your password for access"/>
+	<input id="submit" type="submit" value="验证"/>
+	<p id="error">密码错误!</p>
+</div>
+
+
+<!--网页导航-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand">个人视频资源网</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#">首页</a></li>
+			<li><a href="#">视频</a></li>
+		</ul>
+		<p class="navbar-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+		<p class="navbar-text ">童鞋们好,欢迎来到我的 <a class="navbar-link">个人视频资源网</a></p>
+		<p class="navbar-text navbar-right"><a href="#">注册</a></p>
+		<p class="navbar-text navbar-right"><a href="#" >登录</a></p>
+	</div>
+</nav>
+
+
+
+<!--视频列表-->
+
+<div class="container" id="videobox">
+	<ul>
+		<li><video src="hack.mp4" width="280px" height="200px" poster="5.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="hack-old.mp4" width="280px" height="200px"  poster="4.jpg" controls="controls"  preload="none"></video></li>
+		<li><video src="1.MOV" width="280px" height="200px"  poster="6.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="hack.mp4" width="280px" height="200px"  poster="7.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="8.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="9.gif" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="10.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="11.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="12.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="13.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="14.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="15.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="16.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="17.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="11.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="3.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="12.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="5.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="8.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="10.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="13.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="10.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="12.jpg" controls="controls" preload="none"></video></li>
+		<li><video src="" width="280px" height="200px"  poster="10.jpg" controls="controls" preload="none"></video></li>
+	</ul>
+</div>
+
+<script src="main.js" type="text/javascript"></script>
+
+</body>
+</html>

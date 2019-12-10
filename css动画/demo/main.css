@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*--第一页--*/
+.page1 img{
+    margin-left: 25%;
+    width: 50%;
+}
+/*所有页的图片list*/
+[class*='page'] .list{
+    margin-left: 5%;
+}
+[class*='page'] .list img{
+    width: 300px;
+}
+/*所有页的文字图片text*/
+[class*='page'] .text{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+/*所有页的背景图片text*/
+[class*='page'] .bg{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 30%;
+}
+/*背景音乐控制按钮*/
+#audiobox{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border-radius: 25px;
+    background: url("images/music_on.png") no-repeat center;
+    cursor: pointer;
+}
+.section{
+    overflow: hidden;
+}
+/*--第一页动画--*/
+/*
+    核心思路：通过opacity属性和transition配合实现
+*/
+.page1 img{
+    transition: opacity 2s 0.8s;
+    opacity: 0;
+}
+.page1.active img{
+    opacity: 1;
+}
+/*--第二页的动画--*/
+/*
+   核心思路：通过transform:translateY()和transition配合实现
+*/
+.page2 .list img{
+    transition: 1s;
+    transform: translateY(1000px);
+}
+.page2 .list img:nth-child(1){
+    transition-delay: 0.5s;
+}
+.page2 .list img:nth-child(2){
+    transition-delay: 0.7s;
+}
+.page2 .list img:nth-child(3){
+    transition-delay: 0.9s;
+}
+.page2.active .list img{
+    transform: translateY(0);
+}
+/*第三页动画*/
+/*
+    核心思路：通过transform：translateX（）和transition配合实现
+*/
+.page3 .list img{
+    transition: 1s 0.5s;
+}
+.page3 .list img:nth-child(2){
+    transform: translateX(-250px);
+}
+.page3 .list img:nth-child(3){
+     transform: translateX(-500px);
+ }
+.page3.active .list img{
+    transform: translate(0);
+}
+/*第四页动画*/
+/*
+    核心思路：通过transform：translate（）和keyframes配合实现
+*/
+.page4 .list img:nth-child(1){
+    transform: translate(300px,-1000px);
+}
+.page4 .list img:nth-child(2){
+    transform: translate(0px,-1000px);
+}
+.page4 .list img:nth-child(3){
+    transform: translate(-300px,-1000px);
+}
+@-webkit-keyframes move1 {
+    0%{transform: translate(300px,-1000px)}
+    20%{transform: translate(300px,0px)}
+    50%{transform: translate(300px,-50px)}
+    70%{transform: translate(300px,-0px)}
+    100%{transform: translate(0px,0px)}
+}
+@-webkit-keyframes move2 {
+    0%{transform: translate(0px,-1000px)}
+    20%{transform: translate(0px,0px)}
+    50%{transform: translate(0px,-50px)}
+    70%{transform: translate(0px,-0px)}
+    100%{transform: translate(0px,0px)}
+}
+@-webkit-keyframes move3 {
+    0%{transform: translate(-300px,-1000px)}
+    20%{transform: translate(-300px,0px)}
+    50%{transform: translate(-300px,-50px)}
+    70%{transform: translate(-300px,-0px)}
+    100%{transform: translate(0px,0px)}
+}
+.page4.active .list img:nth-child(1){
+     animation: move1 1.5s 0.5s forwards;
+ }
+.page4.active .list img:nth-child(2){
+    animation: move2 1.5s 0.5s forwards;
+}
+.page4.active .list img:nth-child(3){
+    animation: move3 1.5s 0.5s forwards;
+}
+

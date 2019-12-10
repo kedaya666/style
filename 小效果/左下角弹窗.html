@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script>
+        $(function(){
+            $("#btn1").click(function(){
+                $("#left").slideDown(1000);
+            });
+            $(".title").children("img").click(function(){
+                $("#left").slideUp(1000);
+            })
+        })
+
+    </script>
+    <style>
+        .windows{
+            background-color: gainsboro;
+            width: 240px;
+            display: none;
+            position: absolute;
+            bottom: 0;
+        }
+        .content{
+            height: 140px;
+            background-color: #ffffff;
+            border: 2px solid gainsboro;
+        }
+        .title{
+            padding: 4px;
+            font-size: 14px;
+        }
+        .title img{
+            float: right;
+            width: 20px;
+            height: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<input type="button" value="弹窗" id="btn1"/> <br/>
+<div id="left" class="windows">
+    <div class="title">
+        <img src="images/zh.png" alt=""/>
+        标题标题标题
+    </div>
+    <div class="content">
+        内容内容内容.......
+    </div>
+</div>
+
+</body>
+</html>

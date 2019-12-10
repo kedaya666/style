@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #bg{
+            width: 800px;
+            height: 600px;
+            background-image: url('images/bg.jpg');
+            /*background-color: black;*/
+            margin: 0px auto;
+        }
+        #bees{
+            width: 420px;
+            height: 300px;
+            /*background-color: pink;*/
+            margin: 0px auto;
+        }
+        #bees div{
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<div id="content">
+
+    <div id="bg">
+        <div id="bees">
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    //下面两个函数的实现,大家可以对比用"*"打印图形的思路,只不过这里用img/div标签代替了"*"
+
+    //排列矩形图形
+    function rect()
+    {
+        //1.获取bees标签
+        var bees = document.getElementById("bees")
+
+        //2.讲多个bee放入bees标签
+        //每个bee是个img标签
+
+        for(var i = 0;i < 40;i++)
+        {
+            //创建一个img标签
+            var bee = document.createElement("img");
+            bee.src = 'images/mf'+(Math.floor(Math.random()*3)+1)+'.png';
+
+            //将bee放入bees
+            bees.appendChild(bee);
+        }
+    }
+    // rect()
+    //排列三角形图形
+    function triangle()
+    {
+        //思路: 明确需要放入几层
+
+        //1.获取bees标签
+        var bees = document.getElementById("bees")
+
+        //控制一共有几层
+        for(var i = 1;i <= 5;i++)
+        {
+            //控制占位div的个数
+            for(var k =0;k < 5-i;k++)
+            {
+                //创建一个div标签
+                var div = document.createElement("div");
+                //将div放入bees
+                bees.appendChild(div);
+            }
+            //具体这一层
+            for(var j = 1;j <=2*i-1;j++ )
+            {
+                //创建一个img标签
+                var bee = document.createElement("img");
+                bee.src = 'images/mf'+(Math.floor(Math.random()*3)+1)+'.png';
+
+                //将bee放入bees
+                bees.appendChild(bee)
+            }
+            //换行
+            bees.appendChild(document.createElement("br"));
+        }
+    }
+    triangle()
+
+
+
+    //功能: 手动F5刷新页面,随机显示两种效果中的一种.
+//    Math.floor(Math.random()*2) == 0 ? rect() : triangle();
+
+
+    /*
+    * 下面是函数的代码,个别同学的作为学习参考.
+    * */
+
+    //定义函数的关键字是function
+
+    //样例
+
+    /*
+    * 无参函数
+    * 需求:打印字符串"func1"
+    * */
+    function func1()
+    {
+        document.write('func1');
+    }
+
+    /*
+    * 有参函数
+    * 需求:计算两个数的和
+    * */
+    function func2(p1,p2)
+    {
+        document.write(p1+p2);
+    }
+
+    /*
+    * 带返回值
+    * 需求: 计算两个数的和.并返回这个和(供程序员继续使用)
+    * */
+    function func3(p1,p2)
+    {
+        return p1+p2;
+    }
+
+    //总结: 我们自己写的函数,,需要不需要带参数,带返回值,由需求而定
+
+    func1();//调用无参函数
+    func2(100,200);//调用带参函数
+    func2(300,400);
+
+    var sum = func3(1000,8999);//返回的值,程序员可以继续使用(参与其他运算等)
+
+    var result;
+    result += sum;
+
+    alert(result);
+
+</script>
+
+</body>
+</html>

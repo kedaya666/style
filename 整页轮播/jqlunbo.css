@@ -1,0 +1,53 @@
+/* CSS Document */
+* { padding:0; margin:0;}
+
+body { font-size:12px; font-family:"宋体"; padding:100px;}
+
+ul { list-style-type:none;}
+
+a { color:#666; text-decoration:none;}
+
+a:hover { color:#000; text-decoration:underline;}
+
+img { border:none;}
+
+h1 { font-size:12px;}
+
+.box { width:595px;border:1px solid #e7e7e7;}
+
+
+/* .div1 a { float:right; margin:10px 12px 0 0;}*/
+.div1 { height:35px; background:#eee;}
+
+.div1 h1 { height:35px; line-height:35px; padding-left:10px; float:left;}
+
+.div1 a { float:right; margin:10px 12px 0 0;}
+
+
+
+/* 图片展示的四个小按钮 */
+.pointbtn { float:left; margin:14px 0 0 10px;}
+
+.pointbtn span { width:7px; height:7px; float:left;  background:url(img/1.gif) no-repeat;  margin:0 2px; }
+
+.pointbtn span.one { background:url(img/2.gif) no-repeat; }
+
+
+/* 图片展示原点旁边的方向键 */
+.imgbtn { float:left; margin:7px 0 0 10px; }
+
+.imgbtn span { float:left; background:url(img/3.gif) no-repeat; width:31px; height:22px; }
+
+.imgbtn span.next { background-position:-31px 0; }
+
+.div2 { width:592px; height:160px; overflow:hidden; position:relative;  border-top:none;}
+
+.div2 ul li { float:left; margin:10px 2px 0; padding:8px;}
+
+/*  图片列表 */
+
+.conent { width:2400px; position:absolute; top:0; left:0;}
+
+.conent h1 { padding:5px 0 5px 0; }
+
+.conent h1 a { color:#aaa; }

@@ -1,0 +1,56 @@
+/*
+    样式文件
+*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+#content{
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.size{
+    width: 500px;
+    height: 150px;
+}
+
+#content-big-pic{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.img1{
+    transition: left 0.2s linear;
+    width: 500px;
+    height: 150px;
+}
+#content-small-pic{
+    width: 500px;
+    height: 50px;
+}
+#content-small-pic ul{
+    list-style: none;
+}
+#content-small-pic ul li{
+    float: left;
+}
+
+#content-small-pic ul li img{
+    width: 98px;
+    height: 48px;
+    border: 1px solid white;
+}
+#content-small-pic ul li img.current{
+    border: 1px solid red;
+}
+
+
+
+
+
+

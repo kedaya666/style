@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-3.1.0.min.js"></script>
+    <style type="text/css">
+        html,body{margin:0px;padding:0px;width: 100%;height:100%;font-family: "微软雅黑";}
+        .boxDom {
+            width:100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        .idDom {
+            width: 100%;
+            height: 60px;
+            background: #666;
+            position: fixed;
+            bottom: 0px;
+        }
+        .content {
+            width:500px;
+            height: 40px;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top:0px;
+            bottom:0px;
+            margin:auto;
+        }
+        .title {
+            display: inline;
+            font-size: 24px;
+            vertical-align:bottom;
+            color:#fff;
+        }
+        .text {
+            border:none;
+            width:300px;
+            height: 30px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        .btn {
+            width:60px;
+            height: 30px;
+            background: red;
+            border:none;
+            color:#fff;
+            font-size: 12px;
+        }
+        .string {
+            width:300px;
+            height: 40px;
+            position: absolute;
+            color:#000;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="boxDom" id="boxDom">
+    <div class="idDom" id="idDom">
+        <div class="content">
+            <p class="title">说点什么:</p>
+            <input type="text" class="text" id="text" />
+            <button type="button" class="btn" id="btn">发射</button>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(function(){
+        $("#btn").bind("click",createobj);
+        //键盘按下事件
+        document.onkeydown=function(){
+            if(event.keyCode==13){
+                createobj();//调用
+            }
+        }
+        function createobj() {
+            //1. 获取用户输入
+            var text = $("#text").val();
+            //2. 生成一个元素
+            var createspan = $("<span class='string'></span>");
+            createspan.text(text);//给生成的元素添加内容
+            $("#text").val("");
+            //当前页面的高度
+            var pageHeight = parseInt($(document).height());
+            //当前页面的宽度
+            var pagewidth = parseInt($(document).width());
+            var top = Math.floor(pageHeight * Math.random());
+            //添加样式，和出现的位置
+            createspan.css({"top": top, "right": -400, "color": getRandomColor()});
+            $("#boxDom").append(createspan);
+            //3. 添加动画效果
+            var spandom = $("#boxDom>span:last-child");
+            //从右向左移动的效果
+            spandom.animate({"right": pagewidth + 400}, 10000, function () {
+                //4. 移出
+                $(this).remove()
+            });
+        }
+        //随机选一个颜色
+        function getRandomColor()
+        {
+            var color='';
+            var arr=['a','b','c','d','e','f','0','1','2','3','4','5','6','7','8','9'];
+            for(var i=0;i<6;i++) {
+                color+=arr[Math.floor(Math.random() * 15)];
+            }
+            return '#' +  color;
+        }
+    })
+
+
+
+</script>
+</html>

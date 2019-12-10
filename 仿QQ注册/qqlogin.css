@@ -1,0 +1,233 @@
+*{margin: 0;padding: 0;}
+.box{
+    width: 100%;
+    height: 984px;
+    background-image: url("images/body.png");
+    background-repeat: repeat-x;
+}
+/*-----------------页面头部-------------------*/
+.box-top{
+    width: 956px;
+    height: 94px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url("images/bg_chs.png") no-repeat left -172px top 0;
+}
+.right{
+    height: 94px;
+    width: 160px;
+    float: right;
+    padding-top: 32px;
+    line-height: 25px;
+}
+.right span{
+    width: 53px;
+    border-right: 1px solid white;
+    font-size: 8px;
+    color:white;
+    text-align: center;
+}
+.right a{
+    float: right;
+    color: white;
+    text-decoration: none;
+}
+/*---------------------页面主体------------------------*/
+.box-dow{
+    width: 956px;
+    margin: 0 auto;
+    height: 900px;
+}
+.dow-left{
+    float: left;
+    height: 900px;
+    width: 210px;
+    background-image: url("images/left.png");
+    background-repeat: no-repeat;
+}
+.number{
+    width: 208px;
+    height: 76px;
+    margin: 29px 0 10px 2px;
+    background-image: url("images/left_2_05.png");
+    background-repeat: no-repeat;
+    padding-top: 10px;
+}
+.number-p1{
+    width: 108px;
+    height: 26px;
+    margin-left: 14px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+.number-p2{
+    margin-top: 8px;
+    margin-left: 14px;
+    color: white;
+    font-size: 12px;
+}
+.postbox{
+    width: 189px;
+    height: 79px;
+    margin-left: 2px;
+    background-image: url("images/left_2_02.png");
+    background-repeat: no-repeat;
+    padding-top: 10px;
+}
+.postbox-p1{
+    width: 108px;
+    height: 26px;
+    margin-left: 14px;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+.postbox-p2 {
+    margin-top: 8px;
+    margin-left: 14px;
+    color: black;
+    font-size: 12px;
+}
+.like{
+    width: 178px;
+    height: 185px;
+    margin-top: 100px;
+    margin-left: 5px;
+    background-image: url("images/icon_1_07.png");
+    background-repeat: no-repeat;
+    position: relative;
+}
+.like input{
+    position: absolute;
+    top: 41px;
+    left: 2px;
+    width: 141px;
+    height: 24px;
+}
+.like-box{
+    width: 101px;
+    height: 49px;
+    position: absolute;
+    top: 90px;
+    left: 35px;
+}
+.like-box span{
+    width: 49px;
+    font-size: 12px;
+    color: #696969;
+    line-height: 24px;
+}
+.dow-right{
+    width: 745px;
+    height: 898px;
+    float: left;
+    background-color: #f8fdff;
+    border: 1px solid #b4c7d6;
+    border-left: none;
+    /*padding: 32px 63px 0px 60px;*/
+}
+.banner{
+    width: 610px;
+    height: 163px;
+    margin-top: 31px;
+    margin-left: 60px;
+}
+.form{
+    width: 607px;
+    height: 586px;
+    margin-top: 49px;
+    margin-left: 35px;
+    position: relative;
+}
+.form h3{
+    border-bottom: 1px solid #dddddd ;
+    border-left: 3px solid #59afe4;
+}
+
+.form-txt{
+    width: 300px;
+    height: 35px;
+    border: 1px solid #a7b6c4;
+    border-radius: 3px;
+}
+.form-box{
+    margin-left: 33px;
+}
+#main{
+    width: 607px;
+    height: 532px;
+    margin-top: 23px;
+
+}
+.main-div1{
+    padding-left: 91px;
+    margin-bottom: 20px;
+}
+.main-div2{
+    padding-left: 89px;
+    margin-bottom: 20px;
+}
+.main-div3{
+    padding-left: 73px;
+    margin-bottom: 20px;
+}
+.main-div4{
+    padding-left: 127px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.main-div5{
+    padding-left: 60px;
+    margin-bottom: 20px;
+}
+.main-div6{
+    padding-left: 126px;
+    margin: 10px 0;
+
+}
+.main-div7{
+    padding-left: 60px;
+}
+.main-p{
+    font-size: 10px;
+    padding-left: 128px;
+    color: #808080;
+    line-height: 20px;
+
+}
+.main-p a{
+    text-decoration: none;
+    color: #4199d7;
+}
+.btn{
+    width: 300px;
+    height: 50px;
+    background-color: #69b946;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    line-height: 50px;
+}
+/*---------------js部分------------------*/
+.error{
+    background-image: url("images/pwd_sprite_05.png");
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    font-size: 10px;
+    color: red;
+}
+.rigt{
+    background-image: url("images/pwd_sprite_02.png");
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    font-size: 10px;
+}
+.red{
+    border: 1px solid red;
+}
+
+
+

@@ -1,0 +1,73 @@
+*{
+    font-family: "微软雅黑";
+    margin: 0;
+    padding: 0;
+}
+/*
+    轮播图整体居中
+*/
+#content{
+    width: 500px;
+    height: 200px;
+    background-color: blue;
+    margin: 0 auto;
+}
+
+/*
+    大图所在div
+*/
+#content #content-big-pic{
+    position: relative;
+    width: 500px;
+    height: 150px;
+    background-color: purple;
+}
+#content #content-big-pic ul{
+    list-style: none;
+}
+#content #content-big-pic ul li{
+    /*图片切换过渡效果*/
+    transition: opacity 0.3s linear;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500px;
+    height: 150px;
+    opacity: 0;/*设置透明*/
+}
+#content #content-big-pic ul li.current{
+    opacity: 1;/*不透明*/
+}
+#content #content-big-pic ul li img{
+    width: 500px;
+    height: 150px;
+}
+
+
+
+
+/*
+    小图所在div
+*/
+#content #content-small-pic{
+    width: 500px;
+    height: 50px;
+    background-color: black;
+}
+#content #content-small-pic ul{
+    list-style: none;
+}
+#content #content-small-pic ul li{
+    float: left;
+    width: 98px;
+    height: 48px;
+    border: 1px solid white;
+}
+#content #content-small-pic ul li.current{
+    border: 1px solid red;
+}
+#content #content-small-pic ul li img{
+    width: 100px;
+    height: 50px;
+}
+

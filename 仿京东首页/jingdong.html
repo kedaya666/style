@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>京东</title>
+    <link rel="stylesheet" href="jingdong.css" type="text/css"/>
+    <script src="jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<!--头部导航-->
+<div class="head">
+    <div class="head-bg">
+        <div class="head-main">
+            <span>送至：北京</span>
+            <ul>
+                <li>你好，请登录 <a href="#">免费注册</a></li>
+                <li>我的订单</li>
+                <li style="position: relative" id="li1">我的京东
+                    <ul class="myjd">
+                        <li>待处理订单</li>
+                        <li>我的关注</li>
+                        <li>我的问答</li>
+                        <li>我的京豆</li>
+                        <li>降价商品</li>
+                        <li>我的理财</li>
+                        <li>返修退换货</li>
+                        <li>京东白条</li>
+                    </ul>
+                </li>
+                <li>京东会员</li>
+                <li>企业采购</li>
+                <li style="position: relative" id="li2">手机京东
+                    <div class="phone">
+                        <div class="phone-top">
+                            <img src="images/V5F4M$(WXNC3OW%WEQ7`()0_03.png" alt=""/>
+                            <span>京东客户端</span> <br/>
+                            <span class="phone-top-span">新人专享188元大礼包</span>
+                        </div>
+                        <div class="phone-dow">
+                            <img src="images/V5F4M$(WXNC3OW%WEQ7`()0_06.png" alt=""/>
+                            <span>京东经融客户的</span> <br/>
+                            <span class="phone-top-span">扫一扫 让赚钱再轻松一点</span>
+                        </div>
+                    </div>
+                </li>
+                <li style="position: relative" id="li3">关注京东
+                    <div class="about">
+                        <img src="images/0`D]E6GZ7@XEG}_LMYHA_B7_03.png" alt=""/>
+                    </div>
+                </li>
+                <li style="position: relative" id="li4">客户服务
+                    <div class="customer">
+                        <ul class="customer-top">
+                            <li class="customer-top-li">客户</li>
+                            <li>服务中心</li>
+                            <li>售后服务</li>
+                            <li>在线客服</li>
+                            <li>意见建议</li>
+                            <li>电话客服</li>
+                            <li>客服邮箱</li>
+                            <li>金融咨询</li>
+                        </ul>
+                        <ul class="customer-dow">
+                            <li class="customer-top-li">商户</li>
+                            <li>京东商学院</li>
+                            <li>商家入驻</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>网站导航</li>
+            </ul>
+        </div>
+    </div>
+    <div class="head-title">
+        <div class="head-title-body">
+            <div class="head-tbody-a">
+                <img src="images/[07F4E]}O62[JLGEPU8)L7S_06.gif" alt=""/>
+                <div class="head-tbody-input">
+                    <input type="text" class="head-tbody-text"/>
+                    <input type="submit" value="搜索" class="head-tbody-sub"/><br/>
+                    <a href="#">低至9.9</a>
+                    <a href="#">5件5折</a>
+                    <a href="#">3件7折</a>
+                    <a href="#">领千万优惠</a>
+                    <a href="#">速食调味</a>
+                    <a href="#">休闲男鞋</a>
+                    <a href="#">女式风衣</a>
+                    <a href="#">天天果园</a>
+                    <a href="#">冰皮月饼</a>
+                </div>
+                <img src="images/[07F4E]}O62[JLGEPU8)L7S_03.gif" alt=""/>
+            </div>
+            <div class="head-tbody-b">
+                <h3>全部商品分类</h3>
+                <ul>
+                    <li>服装城</li>
+                    <li>美妆馆</li>
+                    <li>京东超市</li>
+                    <li>生鲜</li>
+                    <li>全球购</li>
+                    <li>闪购</li>
+                    <li>团购</li>
+                    <li>拍卖</li>
+                    <li>金融</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页面主体-->
+<div class="main">
+    <!--banner图-->
+    <div class="banner">
+        <ul class="banner-list">
+            <li style="position: relative" id="lia">家用电器 <span>> </span>
+                <div class="home">
+                    <div class="home-left">
+                        <div class="home-top">
+                            <span>家电城</span>
+                            <span>品牌日</span>
+                            <span>智能生活馆</span>
+                            <span>京东净化馆</span>
+                            <span>京东帮服务中心</span>
+                            <span>家电众筹馆</span>
+                        </div>
+                        <p>
+                            <span>电视 ></span><a href="#">合资品牌</a><a href="#">国产品牌</a><a href="#">互联网品牌</a>
+                        </p>
+                        <p>
+                            <span>空调 ></span><a href="#">壁挂式空调</a><a href="#">柜式空调</a><a href="#">中央空调</a><a
+                                href="#">空调配件</a>
+                        </p>
+                        <p>
+                            <span>洗衣机 ></span><a href="#">合资品牌</a><a href="#">国产品牌</a><a href="#">互联网品牌</a>
+                            <a href="#">滚筒洗衣机</a><a href="#">洗烘一体机</a>
+                        </p>
+                        <p>
+                             <span>冰箱 ></span><a href="#">合资品牌</a><a href="#">国产品牌</a><a href="#">互联网品牌</a>
+                            <a href="#">多门</a><a href="#">对开门</a><a href="#">双门</a><a href="#">三开门</a>
+                        </p>
+                        <p>
+                             <span>厨卫大电 ></span><a href="#">合资品牌</a><a href="#">国产品牌</a><a href="#">对开门</a><a href="#">双门</a><a href="#">三开门</a><a href="#">互联网品牌</a>
+                        </p>
+                        <p>
+                             <span>厨房小电 ></span><a href="#">合资品牌</a><a href="#">国产品牌</a><a href="#">互联网品牌</a>
+                        </p>
+                        <p>
+                        <span>生活电器 ></span><a href="#">合资品牌</a><a href="#">互联网品牌</a>
+                            <a href="#">滚筒洗衣机</a><a href="#">洗烘一体机</a><a href="#">国产品牌</a><a href="#">互联网品牌</a>
+                        </p>
+                        <p>
+                        <span>个护健康 ></span><a href="#">合资品牌</a><a href="#">合资品牌</a><a href="#">互联网品牌</a>
+                            <a href="#">滚筒洗衣机</a><a href="#">国产品牌</a><a href="#">互联网品牌</a><a href="#">合资品牌</a><a href="#">互联网品牌</a>
+                            <a href="#">滚筒洗衣机</a>
+                        </p>
+                        <p>
+                        <span>电视 ></span><a href="#">合资品牌</a><a href="#">国产品牌</a><a href="#">互联网品牌</a>
+                            <a href="#">多门</a><a href="#">对开门</a><a href="#">双门</a><a href="#">三开门</a><a href="#">国产品牌</a><a href="#">互联网品牌</a>
+                        </p>
+                        <p>
+                        <span>家庭影院 ></span><a href="#">合资品牌</a><a href="#">国产品牌</a><a href="#">互联网品牌</a>
+                            <a href="#">多门</a><a href="#">对开门</a><a href="#">双门</a><a href="#">三开门</a><a href="#">国产品牌</a><a href="#">互联网品牌</a><a href="#">国产品牌</a><a href="#">互联网品牌</a>
+                        </p>
+                    </div>
+                    <div class="home-right">
+                        <img src="images/32OPY1(]TP14O]6MZ5$Y@RM_0a_03.png" alt=""/>
+                    </div>
+
+                </div>
+            </li>
+            <li>手机、运营商、数码<span>> </span></li>
+            <li>电脑、办公<span>> </span></li>
+            <li>家具、家居、家装、厨具<span>> </span></li>
+            <li>男装、女装、童装、内衣<span>> </span></li>
+            <li>个护化妆、清洁用品、宠物<span>> </span></li>
+            <li>鞋靴、箱包、珠宝、奢侈品<span>> </span></li>
+            <li>运动、户外、珠宝<span>> </span></li>
+            <li>汽车、汽车用品<span>> </span></li>
+            <li>母婴、玩具乐器<span>> </span></li>
+            <li>食品、酒类、生鲜、特产<span>> </span></li>
+            <li>医药保健<span>> </span></li>
+            <li>图书、音像、电子书<span>> </span></li>
+            <li>彩票、旅行、充值、票务<span>> </span></li>
+            <li>理财、众筹、白条、保险<span>> </span></li>
+        </ul>
+        <div class="banner-img" id="content">
+            <ul id="banner-bigimg">
+                <li class="current"><img src="images/57ec83e8N837a0d0f.jpg" alt=""/></li>
+                <li><img src="images/57f83f1cNb6a28336.jpg" alt=""/></li>
+                <li><img src="images/57fa0bd4N7c708e42.jpg" alt=""/></li>
+                <li><img src="images/57fa0250N8494a25e.jpg" alt=""/></li>
+                <li><img src="images/57fb416dNccf51a3e.jpg" alt=""/></li>
+                <li><img src="images/57fb5565Nc2a5a277.jpg" alt=""/></li>
+            </ul>
+            <ul id="banner-smallimg">
+                <li class="current">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+        <div class="banner-news">
+            <div class="banner-news-top">
+                <h5>京东快报 <span>更多></span></h5>
+                <p>
+                    <span>[特惠]</span>2016年诺贝尔奖隆重揭晓 <br/>
+                    <span>[公告]</span>京东配送旧衣回收公益活动 <br/>
+                    <span>[特惠]</span>自行车9.9元秒 <br/>
+                    <span>[特惠]</span>河南驻马店仓开仓公告 <br/>
+                    <span>[特惠]</span>齐心办公文具，美满199减100 <br/>
+                </p>
+                <div><img src="images/[07F4E]}O62[JLGEPU8)L7S_11.gif" alt=""/> <br/>话费 </div>
+                <div><img src="images/[07F4E]}O62[JLGEPU8)L7S_13.gif" alt=""/> <br/>机票 </div>
+                <div><img src="images/[07F4E]}O62[JLGEPU8)L7S_15.gif" alt=""/> <br/>电影票 </div>
+                <div><img src="images/[07F4E]}O62[JLGEPU8)L7S_17.gif" alt=""/> <br/>游戏 </div>
+                <div><img src="images/[07F4E]}O62[JLGEPU8)L7S_23.gif" alt=""/> <br/>彩票 </div>
+                <div><img src="images/[07F4E]}O62[JLGEPU8)L7S_24.gif" alt=""/> <br/>加油站 </div>
+                <div><img src="images/[07F4E]}O62[JLGEPU8)L7S_25.gif" alt=""/> <br/>酒店 </div>
+                <div><img src="images/[07F4E]}O62[JLGEPU8)L7S_26.gif" alt=""/> <br/>火车票 </div>
+                <div><img src="images/[07F4E]}O62[JLGEPU8)L7S_31.gif" alt=""/> <br/>众筹 </div>
+                <div><img src="images/[07F4E]}O62[JLGEPU8)L7S_32.gif" alt=""/> <br/>理财 </div>
+                <div><img src="images/[07F4E]}O62[JLGEPU8)L7S_33.gif" alt=""/> <br/>礼品卡 </div>
+                <div><img src="images/[07F4E]}O62[JLGEPU8)L7S_34.png" alt=""/> <br/>白条 </div>
+                <img src="images/57ecd879N5eb26d5f.jpg" alt=""/>
+            </div>
+        </div>
+    </div>
+    <!--今日推荐-->
+    <div class="lubo-img">
+        <div class="lubo-gif"></div>
+        <div class="lubo-pic" id="lunbo">
+            <img src="images/57ee4169N3000ce99.jpg" alt=""/>
+            <img src="images/57ee4169N3000ce99.jpg" alt=""/>
+            <img src="images/57ee4169N3000ce99.jpg" alt=""/>
+            <img src="images/57ee4169N3000ce99.jpg" alt=""/>
+            <div class="lubo-pic-left"> < </div>
+            <div class="lubo-pic-right"> > </div>
+        </div>
+    </div>
+    <!--猜你喜欢-->
+    <div class="like">
+        <p>猜你喜欢 <span id="huan">换一批</span></p>
+        <ul class="like-img" id="guss">
+            <li><img src="images/1.png" alt=""/><br/><div><a href="#">【京东超市】福临门东北大米 优质东北2015</a> <br/> <span>￥319</span></div></li>
+            <li><img src="images/2.png" alt=""/><br/><div><a href="#">【京东超市】福临门东北大米 优质东北2015</a> <br/> <span>￥319</span></div></li>
+            <li><img src="images/3.png" alt=""/><br/><div><a href="#">【京东超市】福临门东北大米 优质东北2015</a> <br/><span>￥319</span></div></li>
+            <li><img src="images/4.png" alt=""/><br/><div><a href="#">【京东超市】福临门东北大米 优质东北2015</a> <br/> <span>￥319</span></div></li>
+            <li><img src="images/5.png" alt=""/><br/><div><a href="#">【京东超市】福临门东北大米 优质东北2015</a> <br/> <span>￥319</span></div></li>
+            <li><img src="images/6.png" alt=""/><br/><div><a href="#">【京东超市】福临门东北大米 优质东北2015</a> <br/> <span>￥319</span></div></li>
+        </ul>
+    </div>
+    <!--分割图-->
+    <div class="pic">
+        <img src="images/57f9aaddN299bdce0.jpg" alt=""/>
+        <img src="images/57fa1651N355905dc.jpg" alt=""/>
+        <img src="images/57f9aaddN299bdce0.jpg" alt=""/>
+    </div>
+    <!--楼层-->
+    <div class="floor1">
+        <div class="floor1-head">
+            <span class="head-span1" id="1f">1F</span>
+            <span class="head-span2">服装鞋包</span>
+            <ul class="floor1-ul">
+                <li>大牌</li>
+                <li>男装</li>
+                <li>女装</li>
+                <li>鞋靴</li>
+                <li>箱包</li>
+                <li>内衣配饰</li>
+                <li>珠宝首饰</li>
+                <li>奢品礼品</li>
+                <li>奢华腕表</li>
+            </ul>
+        </div>
+        <div class="floor1-body">
+            <div class="f1body-left">
+                <img src="images/57fbb113N11916df4.jpg" alt=""/>
+                <img src="images/57fba70cN50cf9c9b.jpg" alt=""/>
+                <div class="left-z">
+                    <div class="left-ztop">
+                        <div>男装</div>
+                        <div>女装</div>
+                        <div>内衣</div>
+                        <div>鞋靴</div>
+                        <div>箱包</div>
+                        <div>奢侈品</div>
+                    </div>
+                    <ul class="left-zdow">
+                        <li>
+                            <a href="#">潮流女装</a>
+                            <a href="#">围巾</a> <br/>
+                            <a href="#">服装城</a>
+                            <a href="#">品质男鞋</a> <br/>
+                            <a href="#">时尚女鞋</a>
+                            <a href="#">精品男装</a> <br/>
+                            <a href="#">舒适睡衣</a>
+                            <a href="#">奢侈品</a>
+                        </li>
+                        <li>
+                            <a href="#">潮流女装</a>
+                            <a href="#">围巾</a> <br/>
+                            <a href="#">服装城</a>
+                            <a href="#">品质男鞋</a> <br/>
+                            <a href="#">时尚女鞋</a>
+                            <a href="#">精品男装</a> <br/>
+                            <a href="#">舒适睡衣</a>
+                            <a href="#">奢侈品</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="f1body-middle">
+                <img src="images/57fbb143Na0bde6c5.jpg" alt=""/>
+                <ul id="picture1">
+                    <li> <img src="images/57fba66bN29c8be4b.jpg" alt="" style="position: absolute; left: 0;top: 0" /></li>
+                    <li> <img src="images/57fba60bN90dbcb94.jpg" alt="" style="position: absolute; left: 439px;top: 0" /></li>
+                    <li> <img src="images/57fba64bNebfdebb0.jpg" alt="" style="position: absolute; left: 878px;top: 0" /></li>
+                    <li> <img src="images/57fba69cN69a6091f.jpg" alt="" style="position: absolute; left: 1317px;top: 0" /></li>
+                </ul>
+
+                <img src="images/57fe13fcN04458d41.jpg" alt=""/>
+            </div>
+            <div class="f1body-right">
+                <img src="images/57fbb1c5N7dfac5d1.jpg" alt=""/>
+                <img src="images/57fbb1c5N7dfac5d1.jpg" alt=""/>
+                <img src="images/57fbb1c5N7dfac5d1.jpg" alt=""/>
+                <img src="images/57fbb1c5N7dfac5d1.jpg" alt=""/>
+                <img src="images/57fbb1c5N7dfac5d1.jpg" alt=""/>
+                <img src="images/57fbb1c5N7dfac5d1.jpg" alt=""/>
+                <img src="images/57fbb1c5N7dfac5d1.jpg" alt=""/>
+                <img src="images/57fbb1c5N7dfac5d1.jpg" alt=""/>
+            </div>
+        </div>
+        <ul class="floor1-foot">
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+        </ul>
+    </div>
+
+    <div class="floor1">
+        <div class="floor1-head">
+            <span class="head-span1" id="2f">2F</span>
+            <span class="head-span2">手机通讯</span>
+            <ul class="floor1-ul">
+                <li>大牌</li>
+                <li>男装</li>
+                <li>女装</li>
+                <li>鞋靴</li>
+                <li>箱包</li>
+                <li>内衣配饰</li>
+                <li>珠宝首饰</li>
+                <li>奢品礼品</li>
+                <li>奢华腕表</li>
+            </ul>
+        </div>
+        <div class="floor1-body">
+            <div class="f1body-left">
+                <img src="images/57eba967N9007128a.jpg" alt=""/>
+                <img src="images/57fba70cN50cf9c9b.jpg" alt=""/>
+                <div class="left-z">
+                    <div class="left-ztop">
+                        <div>男装</div>
+                        <div>女装</div>
+                        <div>内衣</div>
+                        <div>鞋靴</div>
+                        <div>箱包</div>
+                        <div>奢侈品</div>
+                    </div>
+                    <ul class="left-zdow">
+                        <li>
+                            <a href="#">潮流女装</a>
+                            <a href="#">围巾</a> <br/>
+                            <a href="#">服装城</a>
+                            <a href="#">品质男鞋</a> <br/>
+                            <a href="#">时尚女鞋</a>
+                            <a href="#">精品男装</a> <br/>
+                            <a href="#">舒适睡衣</a>
+                            <a href="#">奢侈品</a>
+                        </li>
+                        <li>
+                            <a href="#">潮流女装</a>
+                            <a href="#">围巾</a> <br/>
+                            <a href="#">服装城</a>
+                            <a href="#">品质男鞋</a> <br/>
+                            <a href="#">时尚女鞋</a>
+                            <a href="#">精品男装</a> <br/>
+                            <a href="#">舒适睡衣</a>
+                            <a href="#">奢侈品</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="f1body-middle">
+                <img src="images/57fbb143Na0bde6c5.jpg" alt=""/>
+                <img src="images/57fba64bNebfdebb0.jpg" alt=""/>
+                <img src="images/57fe13fcN04458d41.jpg" alt=""/>
+            </div>
+            <div class="f1body-right">
+                <img src="images/57fbb16eN417202d0.jpg" alt=""/>
+                <img src="images/57fbb16eN417202d0.jpg" alt=""/>
+                <img src="images/57fbb16eN417202d0.jpg" alt=""/>
+                <img src="images/57fbb16eN417202d0.jpg" alt=""/>
+                <img src="images/57fbb16eN417202d0.jpg" alt=""/>
+                <img src="images/57fbb16eN417202d0.jpg" alt=""/>
+                <img src="images/57fbb16eN417202d0.jpg" alt=""/>
+                <img src="images/57fbb16eN417202d0.jpg" alt=""/>
+            </div>
+        </div>
+        <ul class="floor1-foot">
+            <li><img src="images/57fc8d2eN17177501.jpg" alt=""/></li>
+            <li><img src="images/57fc8d2eN17177501.jpg" alt=""/></li>
+            <li><img src="images/57fc8d2eN17177501.jpg" alt=""/></li>
+            <li><img src="images/57fc8d2eN17177501.jpg" alt=""/></li>
+            <li><img src="images/57fc8d2eN17177501.jpg" alt=""/></li>
+            <li><img src="images/57fc8d2eN17177501.jpg" alt=""/></li>
+            <li><img src="images/57fc8d2eN17177501.jpg" alt=""/></li>
+            <li><img src="images/57fc8d2eN17177501.jpg" alt=""/></li>
+            <li><img src="images/57fc8d2eN17177501.jpg" alt=""/></li>
+            <li><img src="images/57fc8d2eN17177501.jpg" alt=""/></li>
+        </ul>
+    </div>
+    <div class="floor1">
+        <div class="floor1-head">
+            <span class="head-span1" id="3f">3F</span>
+            <span class="head-span2">家用电器</span>
+            <ul class="floor1-ul">
+                <li>大牌</li>
+                <li>男装</li>
+                <li>女装</li>
+                <li>鞋靴</li>
+                <li>箱包</li>
+                <li>内衣配饰</li>
+                <li>珠宝首饰</li>
+                <li>奢品礼品</li>
+                <li>奢华腕表</li>
+            </ul>
+        </div>
+        <div class="floor1-body">
+            <div class="f1body-left">
+                <img src="images/57fee6d3Ne46ebb89.jpg" alt=""/>
+                <img src="images/57fba70cN50cf9c9b.jpg" alt=""/>
+                <div class="left-z">
+                    <div class="left-ztop">
+                        <div>男装</div>
+                        <div>女装</div>
+                        <div>内衣</div>
+                        <div>鞋靴</div>
+                        <div>箱包</div>
+                        <div>奢侈品</div>
+                    </div>
+                    <ul class="left-zdow">
+                        <li>
+                            <a href="#">潮流女装</a>
+                            <a href="#">围巾</a> <br/>
+                            <a href="#">服装城</a>
+                            <a href="#">品质男鞋</a> <br/>
+                            <a href="#">时尚女鞋</a>
+                            <a href="#">精品男装</a> <br/>
+                            <a href="#">舒适睡衣</a>
+                            <a href="#">奢侈品</a>
+                        </li>
+                        <li>
+                            <a href="#">潮流女装</a>
+                            <a href="#">围巾</a> <br/>
+                            <a href="#">服装城</a>
+                            <a href="#">品质男鞋</a> <br/>
+                            <a href="#">时尚女鞋</a>
+                            <a href="#">精品男装</a> <br/>
+                            <a href="#">舒适睡衣</a>
+                            <a href="#">奢侈品</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="f1body-middle">
+                <img src="images/57fbb143Na0bde6c5.jpg" alt=""/>
+                <img src="images/57fba60bN90dbcb94.jpg" alt=""/>
+                <img src="images/57fe13fcN04458d41.jpg" alt=""/>
+            </div>
+            <div class="f1body-right">
+                <img src="images/57fbb164N520046a8.jpg" alt=""/>
+                <img src="images/57fbb164N520046a8.jpg" alt=""/>
+                <img src="images/57fbb164N520046a8.jpg" alt=""/>
+                <img src="images/57fbb164N520046a8.jpg" alt=""/>
+                <img src="images/57fbb164N520046a8.jpg" alt=""/>
+                <img src="images/57fbb164N520046a8.jpg" alt=""/>
+                <img src="images/57fbb164N520046a8.jpg" alt=""/>
+                <img src="images/57fbb164N520046a8.jpg" alt=""/>
+            </div>
+        </div>
+        <ul class="floor1-foot">
+            <li><img src="images/57fb3e55Na296313c.png" alt=""/></li>
+            <li><img src="images/57fb3e55Na296313c.png" alt=""/></li>
+            <li><img src="images/57fb3e55Na296313c.png" alt=""/></li>
+            <li><img src="images/57fb3e55Na296313c.png" alt=""/></li>
+            <li><img src="images/57fb3e55Na296313c.png" alt=""/></li>
+            <li><img src="images/57fb3e55Na296313c.png" alt=""/></li>
+            <li><img src="images/57fb3e55Na296313c.png" alt=""/></li>
+            <li><img src="images/57fb3e55Na296313c.png" alt=""/></li>
+            <li><img src="images/57fb3e55Na296313c.png" alt=""/></li>
+            <li><img src="images/57fb3e55Na296313c.png" alt=""/></li>
+        </ul>
+    </div>
+
+    <div class="floor1">
+        <div class="floor1-head">
+            <span class="head-span1" id="4f">4F</span>
+            <span class="head-span2">服装鞋包</span>
+            <ul class="floor1-ul">
+                <li>大牌</li>
+                <li>男装</li>
+                <li>女装</li>
+                <li>鞋靴</li>
+                <li>箱包</li>
+                <li>内衣配饰</li>
+                <li>珠宝首饰</li>
+                <li>奢品礼品</li>
+                <li>奢华腕表</li>
+            </ul>
+        </div>
+        <div class="floor1-body">
+            <div class="f1body-left">
+                <img src="images/57fbb113N11916df4.jpg" alt=""/>
+                <img src="images/57fba70cN50cf9c9b.jpg" alt=""/>
+                <div class="left-z">
+                    <div class="left-ztop">
+                        <div>男装</div>
+                        <div>女装</div>
+                        <div>内衣</div>
+                        <div>鞋靴</div>
+                        <div>箱包</div>
+                        <div>奢侈品</div>
+                    </div>
+                    <ul class="left-zdow">
+                        <li>
+                            <a href="#">潮流女装</a>
+                            <a href="#">围巾</a> <br/>
+                            <a href="#">服装城</a>
+                            <a href="#">品质男鞋</a> <br/>
+                            <a href="#">时尚女鞋</a>
+                            <a href="#">精品男装</a> <br/>
+                            <a href="#">舒适睡衣</a>
+                            <a href="#">奢侈品</a>
+                        </li>
+                        <li>
+                            <a href="#">潮流女装</a>
+                            <a href="#">围巾</a> <br/>
+                            <a href="#">服装城</a>
+                            <a href="#">品质男鞋</a> <br/>
+                            <a href="#">时尚女鞋</a>
+                            <a href="#">精品男装</a> <br/>
+                            <a href="#">舒适睡衣</a>
+                            <a href="#">奢侈品</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="f1body-middle">
+                <img src="images/57fbb143Na0bde6c5.jpg" alt=""/>
+                <img src="images/57fba69cN69a6091f.jpg" alt=""/>
+                <img src="images/57fe13fcN04458d41.jpg" alt=""/>
+            </div>
+            <div class="f1body-right">
+                <img src="images/57fbb1bbN47711451.jpg" alt=""/>
+                <img src="images/57fbb1bbN47711451.jpg" alt=""/>
+                <img src="images/57fbb1bbN47711451.jpg" alt=""/>
+                <img src="images/57fbb1bbN47711451.jpg" alt=""/>
+                <img src="images/57fbb1bbN47711451.jpg" alt=""/>
+                <img src="images/57fbb1bbN47711451.jpg" alt=""/>
+                <img src="images/57fbb1bbN47711451.jpg" alt=""/>
+                <img src="images/57fbb1bbN47711451.jpg" alt=""/>
+            </div>
+        </div>
+        <ul class="floor1-foot">
+            <li><img src="images/57fb3e69N1415640a.jpg" alt=""/></li>
+            <li><img src="images/57fb3e69N1415640a.jpg" alt=""/></li>
+            <li><img src="images/57fb3e69N1415640a.jpg" alt=""/></li>
+            <li><img src="images/57fb3e69N1415640a.jpg" alt=""/></li>
+            <li><img src="images/57fb3e69N1415640a.jpg" alt=""/></li>
+            <li><img src="images/57fb3e69N1415640a.jpg" alt=""/></li>
+            <li><img src="images/57fb3e69N1415640a.jpg" alt=""/></li>
+            <li><img src="images/57fb3e69N1415640a.jpg" alt=""/></li>
+            <li><img src="images/57fb3e69N1415640a.jpg" alt=""/></li>
+            <li><img src="images/57fb3e69N1415640a.jpg" alt=""/></li>
+        </ul>
+    </div>
+
+    <div class="floor1">
+        <div class="floor1-head">
+            <span class="head-span1" id="5f">5F</span>
+            <span class="head-span2">电脑数码</span>
+            <ul class="floor1-ul">
+                <li>大牌</li>
+                <li>男装</li>
+                <li>女装</li>
+                <li>鞋靴</li>
+                <li>箱包</li>
+                <li>内衣配饰</li>
+                <li>珠宝首饰</li>
+                <li>奢品礼品</li>
+                <li>奢华腕表</li>
+            </ul>
+        </div>
+        <div class="floor1-body">
+            <div class="f1body-left">
+                <img src="images/57fee6d3Ne46ebb89.jpg" alt=""/>
+                <img src="images/57fba70cN50cf9c9b.jpg" alt=""/>
+                <div class="left-z">
+                    <div class="left-ztop">
+                        <div>男装</div>
+                        <div>女装</div>
+                        <div>内衣</div>
+                        <div>鞋靴</div>
+                        <div>箱包</div>
+                        <div>奢侈品</div>
+                    </div>
+                    <ul class="left-zdow">
+                        <li>
+                            <a href="#">潮流女装</a>
+                            <a href="#">围巾</a> <br/>
+                            <a href="#">服装城</a>
+                            <a href="#">品质男鞋</a> <br/>
+                            <a href="#">时尚女鞋</a>
+                            <a href="#">精品男装</a> <br/>
+                            <a href="#">舒适睡衣</a>
+                            <a href="#">奢侈品</a>
+                        </li>
+                        <li>
+                            <a href="#">潮流女装</a>
+                            <a href="#">围巾</a> <br/>
+                            <a href="#">服装城</a>
+                            <a href="#">品质男鞋</a> <br/>
+                            <a href="#">时尚女鞋</a>
+                            <a href="#">精品男装</a> <br/>
+                            <a href="#">舒适睡衣</a>
+                            <a href="#">奢侈品</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="f1body-middle">
+                <img src="images/57fbb143Na0bde6c5.jpg" alt=""/>
+                <img src="images/57fba66bN29c8be4b.jpg" alt=""/>
+                <img src="images/57fe13fcN04458d41.jpg" alt=""/>
+            </div>
+            <div class="f1body-right">
+                <img src="images/57fbb1a3N80816ede.jpg" alt=""/>
+                <img src="images/57fbb1a3N80816ede.jpg" alt=""/>
+                <img src="images/57fbb1a3N80816ede.jpg" alt=""/>
+                <img src="images/57fbb1a3N80816ede.jpg" alt=""/>
+                <img src="images/57fbb1a3N80816ede.jpg" alt=""/>
+                <img src="images/57fbb1a3N80816ede.jpg" alt=""/>
+                <img src="images/57fbb1a3N80816ede.jpg" alt=""/>
+                <img src="images/57fbb1a3N80816ede.jpg" alt=""/>
+            </div>
+        </div>
+        <ul class="floor1-foot">
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+            <li><img src="images/57d7cc1aN4cb36078.png" alt=""/></li>
+        </ul>
+    </div>
+
+
+</div>
+<!--滚动条-->
+<ul id="foot">
+    <li data="#1f">1F</li>
+    <li data="#2f">2F</li>
+    <li data="#3f">3F</li>
+    <li data="#4f">4F</li>
+    <li data="#5f">5F</li>
+</ul>
+
+<!--JS部分-->
+<script src="jingdong.js"></script>
+<script>
+	$("#foot li").click(
+		function(){
+					var asd = $(this).attr("data");
+					console.log($(asd));
+			 $('html,body').animate({scrollTop:$(asd).offset().top},800);
+			}
+	)
+
+</script>
+<div id="footer"></div>
+</body>
+</html>

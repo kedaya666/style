@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        li{float: left;list-style: none;margin: 20px}
+        .box{width: 800px}
+    </style>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+             var category=$("ul li:gt(5)")
+            category.hide();
+            var abtn=$(".showmore > a");
+            abtn.click(function(){
+                if(category.is(":visible"))//visible选择器用来匹配所有可见元素，hidden选择器用来匹配所有不可见元素
+                {
+                    category.hide();
+                    abtn.text("+显示全部品牌")
+
+                }
+                else{
+                    category.show();
+                    abtn.text("-精简显示品牌")
+                }
+
+            })
+
+        })
+    </script>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li><a href="#">苹果</a></li>
+        <li><a href="#">HTC</a></li>
+        <li><a href="#">华为</a></li>
+        <li><a href="#">小米</a></li>
+        <li><a href="#">苹果</a></li>
+        <li><a href="#">HTC</a></li>
+        <li><a href="#">华为</a></li>
+        <li><a href="#">小米</a></li>
+        <li><a href="#">苹果</a></li>
+        <li><a href="#">苹果</a></li>
+        <li><a href="#">苹果</a></li>
+        <li><a href="#">苹果</a></li>
+    </ul>
+</div>
+<div class="showmore"><a href="#">+显示全部品牌</a></div>
+
+</body>
+</html>

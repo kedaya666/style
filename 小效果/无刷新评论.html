@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script>
+        $(function(){
+            //生成随机数（验证码）
+            $("#validateCode").css("border","1px solid red");
+            $("#validateCode").html(Math.floor(Math.random()*9000)+1000);
+            $("#btn1").click(function(){
+                if($("#validate").val()==$("#validateCode").text()){
+                    $("<tr><td>"+$("#txtname").val()+"</td><td>"+$("#textContext").val()+"</td></tr>").appendTo($("#tb"));
+                    alert("回复成功啦");
+                }
+                else{
+                     alert("验证码输入错误")
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+<table id="tb" style="border:1px solid red">
+    <tr>
+        <td>酷酷的霸主</td>
+        <td>我是吧主，我为自己的沙发代言 </td>
+    </tr>
+</table>
+<br/>
+昵称：<input type="text" id="txtname" value=""/>
+<br/>
+内容：<textarea id="textContext" rows="10" cols="15"></textarea>
+<br/>
+<input type="text" id="validate"/>
+<span id="validateCode"></span>
+<input type="button" value="确定" id="btn1"/>
+</body>
+</html>
